@@ -1,0 +1,55 @@
+{
+  "name": "root",
+  "description": "Workspace for developing a gatsby theme to add material-ui to a gatsby site.",
+  "private": true,
+  "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
+  "repository": "https://github.com/smerth/gatsby-theme-template",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap:workspaces": "lerna bootstrap --use-workspaces",
+    "start:gatsby": "yarn workspace gatsby start",
+    "build:gatsby": "yarn workspace gatsby build",
+    "serve:gatsby": "yarn workspace gatsby serve",
+    "format:gatsby": "yarn workspace gatsby format",
+    "clean:gatsby": "yarn workspace gatsby clean",
+    "start:www": "yarn workspace www start",
+    "build:www": "yarn workspace www build",
+    "serve:www": "yarn workspace www serve",
+    "format:www": "yarn workspace www format",
+    "clean:www": "yarn workspace www clean",
+    "scrub": "yarn workspace www clean && yarn workspace gatsby clean && lerna clean",
+    "prepare": "lerna run prepare",
+    "publish:packages": "lerna publish",
+    "all:outdated": "yarn outdated",
+    "all:upgrade": "yarn upgrade-interactive --latest",
+    "commit": "git cz",
+    "rename:gatsby": "cd examples/gatsby && yarn json -I -f package.json -e 'this.name=`gatsby`'",
+    "rename:www": "cd www/gatsby && yarn json -I -f package.json -e 'this.name=`www`'",
+    "install:gatsby": "mkdir examples && mkdir www && cd examples && npx gatsby new gatsby && yarn rename:gatsby && cd ../www && npx gatsby new gatsby && yarn rename:www"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*",
+    "www/*"
+  ],
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.1.0",
+    "lerna": "^3.16.4",
+    "json": "^9.0.6",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog",
+      "maxHeaderWidth": 100,
+      "maxLineWidth": 100,
+      "defaultType": "",
+      "defaultScope": "",
+      "defaultSubject": "",
+      "defaultBody": "",
+      "defaultIssues": ""
+    }
+  }
+}

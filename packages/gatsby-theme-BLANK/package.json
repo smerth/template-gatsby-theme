@@ -1,0 +1,29 @@
+{
+  "name": "@smerth/gatsby-theme-blank",
+  "version": "0.0.1",
+  "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
+  "repository": "https://github.com/smerth/gatsby-theme-template",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "src/",
+    "gatsby-browser.js",
+    "gatsby-config.js",
+    "gatsby-ssr.js",
+    "index.js"
+  ],
+  "module": "index.js",
+  "dependencies": {},
+  "scripts": {},
+  "peerDependencies": {
+    "gatsby": ">=2.0.75",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "keywords": [
+    "react",
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-theme"
+  ]
+}
