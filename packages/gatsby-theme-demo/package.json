@@ -5,6 +5,7 @@
   "repository": "https://github.com/smerth/gatsby-theme-template",
   "license": "MIT",
   "main": "index.js",
+  "module": "index.js",
   "files": [
     "src/",
     "gatsby-browser.js",
@@ -12,7 +13,6 @@
     "gatsby-ssr.js",
     "index.js"
   ],
-  "module": "index.js",
   "dependencies": {},
   "scripts": {},
   "peerDependencies": {
@@ -20,10 +20,5 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
-  "keywords": [
-    "react",
-    "gatsby",
-    "gatsby-plugin",
-    "gatsby-theme"
-  ]
+  "keywords": []
 }

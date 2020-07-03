@@ -17,12 +17,14 @@
     "publish:packages": "lerna publish",
     "outdated": "yarn outdated",
     "upgrade": "yarn upgrade-interactive --latest",
-    "commit": "git add . && npx git-cz"
+    "commit": "git add . && npx git-cz",
+    "push": "git push origin -u master"
   },
   "workspaces": [
     "packages/*",
     "demo"
   ],
+  "dependencies": {},
   "devDependencies": {
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.1.0",
@@ -30,7 +32,6 @@
     "json": "^9.0.6",
     "prettier": "^1.18.2"
   },
-  "dependencies": {},
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog",
