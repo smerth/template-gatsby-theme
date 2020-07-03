@@ -14,7 +14,7 @@
     "clean": "yarn workspace demo clean",
     "scrub": "yarn clean && find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
     "prepare": "lerna run prepare",
-    "publish:packages": "lerna publish",
+    "pub": "lerna publish",
     "outdated": "yarn outdated",
     "upgrade": "yarn upgrade-interactive --latest",
     "commit": "git add . && npx git-cz",
