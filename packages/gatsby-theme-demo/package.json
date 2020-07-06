@@ -15,7 +15,7 @@
   ],
   "scripts": {},
   "peerDependencies": {
-    "gatsby": ">=2.0.75",
+    "gatsby": ">=2.23.20",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
