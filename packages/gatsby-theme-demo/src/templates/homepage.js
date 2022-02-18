@@ -11,7 +11,7 @@ function Homepage() {
         </span>
         .
       </p>
-      <p>v 1</p>
+      <p>v 2</p>
     </div>
   );
 }
