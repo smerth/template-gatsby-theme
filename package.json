@@ -3,22 +3,26 @@
   "description": "Starter template for developing and publishing gatsby themes.",
   "private": true,
   "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
-  "repository": "https://github.com/smerth/gatsby-theme-template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smerth/gatsby-theme-template"
+  },
+  "homepage": "https://github.com/smerth/gatsby-theme-template#readme",
+  "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
+  "bugs": "https://github.com/smerth/gatsby-theme-template/issues",
   "license": "MIT",
   "scripts": {
-    "bootstrap": "lerna bootstrap --use-workspaces",
+    "setup": "npm install && yarn build && yarn serve",
     "develop": "yarn workspace demo start",
     "build": "yarn workspace demo build",
     "serve": "yarn workspace demo serve",
     "format": "yarn workspace demo format",
     "clean": "yarn workspace demo clean",
     "scrub": "yarn clean && find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
-    "prepare": "lerna run prepare",
+    "readme": "readme",
     "pub": "lerna publish",
-    "outdated": "yarn outdated",
-    "upgrade": "yarn upgrade-interactive --latest",
     "commit": "git add . && npx git-cz",
-    "push": "git push origin -u master"
+    "push": "git push origin -u main"
   },
   "workspaces": [
     "packages/*",
@@ -26,13 +30,28 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "commitizen": "^4.0.3",
-    "cz-conventional-changelog": "^3.1.0",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "ghooks": "1.3.2",
     "lerna": "^3.16.4",
-    "json": "^10.0.0",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "readme-md-generator": "^1.0.0",
+    "semantic-release": "^17.4.2",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "release": {
+    "branches": [
+      "main",
+      "next"
+    ]
   },
   "config": {
+    "ghooks": {
+    },
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog",
       "maxHeaderWidth": 100,
