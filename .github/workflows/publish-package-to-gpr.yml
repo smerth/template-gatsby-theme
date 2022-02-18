@@ -34,9 +34,6 @@ jobs:
       - name: Install Dependancies
         run: npm ci
 
-      - name: Build Package
-        run: npm run build
-
       - name: Release & Publish
         uses: cycjimmy/semantic-release-action@v2
         id: semantic
