@@ -23,6 +23,12 @@ jobs:
         with:
           node-version: "14"
 
+      - name: Edit .npmrc
+        run: |
+          echo "registry=https://registry.npmjs.org" > .npmrc
+          echo "@smerth=https://npm.pkg.github.com/smerth" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
+
       - name: "Setup npm"
         run: |
           npm set @smerth:registry=https://npm.pkg.github.com/smerth
@@ -30,10 +36,11 @@ jobs:
 
       - name: "Version and publish" # Interesting step
         env:
-          GH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
 
           if [ ${{ github.base_ref }} = development ]; then
             npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes
