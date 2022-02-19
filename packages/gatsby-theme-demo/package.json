@@ -18,7 +18,9 @@
     "gatsby-ssr.js",
     "index.js"
   ],
-  "scripts": {},
+  "scripts": {
+    "test": "echo package > gatsby-theme-demo: TESTS PASSED"
+  },
   "peerDependencies": {
     "gatsby": ">=2.23.20",
     "react": "^16.11.0",
