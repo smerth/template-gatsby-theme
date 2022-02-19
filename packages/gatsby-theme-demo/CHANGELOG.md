@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.6-beta.0](https://github.com/smerth/gatsby-theme-template/compare/v0.2.5...v0.2.6-beta.0) (2022-02-19)
+
+
+### Bug Fixes
+
+* **gatsby-theme-demo:** change publishConfig: registry to https://npm.pkg.github.com ([6cd8b8a](https://github.com/smerth/gatsby-theme-template/commit/6cd8b8a3060ae1ffe21daafbfbe5032612f56435))
+* **gatsby-theme-demo:** edit package repository property ([0b4730b](https://github.com/smerth/gatsby-theme-template/commit/0b4730b4093ea61abadcff09bf27fcee12393f55))
+* **gatsby-theme-demo:** move publishConfig from root to the gatsby-theme-demo package.json ([c957804](https://github.com/smerth/gatsby-theme-template/commit/c95780415cacbb0b9ce77da7ef46ca860fc36888))
+
+
+
+
+
 ## [0.2.5](https://github.com/smerth/gatsby-theme-template/compare/v0.3.2...v0.2.5) (2022-02-19)
 
 **Note:** Version bump only for package @smerth/gatsby-theme-demo
