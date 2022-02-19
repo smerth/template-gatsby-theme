@@ -1,11 +1,12 @@
 {
   "name": "@smerth/gatsby-theme-demo",
-  "version": "0.2.5",
-  "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smerth/gatsby-theme-template"
+    "url": "https://github.com/smerth/gatsby-theme-template",
+    "directory": "packages/gatsby-theme-demo"
   },
+  "version": "0.2.5",
+  "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
   "homepage": "https://github.com/smerth/gatsby-theme-template#readme",
   "bugs": "https://github.com/smerth/gatsby-theme-template/issues",
   "license": "MIT",
