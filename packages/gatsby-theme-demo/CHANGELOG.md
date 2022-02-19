@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.7](https://github.com/smerth/gatsby-theme-template/compare/v0.2.6...v0.2.7) (2022-02-19)
+
+
+### Bug Fixes
+
+* **gatsby-theme-demo:** change publishConfig: registry to https://npm.pkg.github.com ([6cd8b8a](https://github.com/smerth/gatsby-theme-template/commit/6cd8b8a3060ae1ffe21daafbfbe5032612f56435))
+
+
+
+
+
 ## [0.2.6](https://github.com/smerth/gatsby-theme-template/compare/v0.2.5...v0.2.6) (2022-02-19)
 
 
