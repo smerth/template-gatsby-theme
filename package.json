@@ -1,6 +1,5 @@
 {
   "name": "root",
-  "version": "0.2.0",
   "description": "Starter template for developing and publishing gatsby themes.",
   "private": true,
   "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
