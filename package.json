@@ -8,7 +8,6 @@
     "url": "https://github.com/smerth/gatsby-theme-template"
   },
   "homepage": "https://github.com/smerth/gatsby-theme-template#readme",
-  "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
   "bugs": "https://github.com/smerth/gatsby-theme-template/issues",
   "license": "MIT",
   "scripts": {
@@ -50,8 +49,7 @@
     ]
   },
   "config": {
-    "ghooks": {
-    },
+    "ghooks": {},
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog",
       "maxHeaderWidth": 100,
