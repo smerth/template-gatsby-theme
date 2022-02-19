@@ -40,7 +40,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
 
           if [ ${{ github.base_ref }} = development ]; then
             npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes
@@ -48,4 +48,4 @@ jobs:
             npx lerna version --conventional-commits --conventional-graduate --yes
           fi
 
-          npx lerna publish from-package --yes
+          npx lerna publish from-git --yes
