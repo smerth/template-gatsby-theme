@@ -27,20 +27,19 @@
     "packages/*",
     "demo"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "commitizen": "^4.2.3",
-    "cz-conventional-changelog": "^3.3.0",
-    "ghooks": "1.3.2",
-    "lerna": "^3.16.4",
-    "prettier": "^1.18.2",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/git": "^10.0.0",
+    "commitizen": "^4.0.0",
+    "cz-conventional-changelog": "^3.0.0",
+    "ghooks": "^2.0.0",
+    "lerna": "^4.0.0",
+    "prettier": "^2.0.0",
     "readme-md-generator": "^1.0.0",
-    "semantic-release": "^17.4.2",
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/git": "^9.0.0"
+    "semantic-release": "^19.0.0"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@smerth:registry": "https://npm.pkg.github.com/smerth"
   },
   "release": {
     "branches": [
