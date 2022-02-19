@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.5](https://github.com/smerth/gatsby-theme-template/compare/v0.3.2...v0.2.5) (2022-02-19)
+
+
+### Features
+
+* **root:** add check workflow ([7437368](https://github.com/smerth/gatsby-theme-template/commit/74373688a3136f51abb0694e37329e673c92ec3e))
+* **root:** add install dependancies step to check workflow ([f56dac1](https://github.com/smerth/gatsby-theme-template/commit/f56dac1d19e45c5d5d7e801ff36435f9068713ab))
+* **root:** add publish step to publish workflow ([23e095f](https://github.com/smerth/gatsby-theme-template/commit/23e095f2b663545e8ecd2cae7931b5ab0d44c509))
+* **root:** add run test step to checks workflow ([de5bb41](https://github.com/smerth/gatsby-theme-template/commit/de5bb41eaa9f87b74dd6bfb5892b327b29158592))
+
+
+
+
+
 ## [0.2.4](https://github.com/smerth/gatsby-theme-template/compare/v0.2.3...v0.2.4) (2022-02-19)
 
 
