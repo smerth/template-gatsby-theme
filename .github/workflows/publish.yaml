@@ -23,6 +23,11 @@ jobs:
         with:
           node-version: "14"
 
+      - name: "Setup npm"
+        run: |
+          npm set @smerth:registry=https://npm.pkg.github.com/smerth
+          npm set "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}"
+
       - name: "Version and publish" # Interesting step
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -37,4 +42,4 @@ jobs:
             npx lerna version --conventional-commits --conventional-graduate --yes
           fi
 
-          npx lerna publish from-git --yes --no-verify-access --registry https://npm.pkg.github.com/smerth
+          npx lerna publish from-git --yes
