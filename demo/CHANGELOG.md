@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0-beta.5](https://github.com/smerth/template-gatsby-theme/compare/v0.4.0-beta.4...v0.4.0-beta.5) (2022-02-20)
+
+
+### Bug Fixes
+
+* **test:** hjh ([1abb850](https://github.com/smerth/template-gatsby-theme/commit/1abb85098249a9a3fdde45359534ac6362074926))
+* **test:** pub ([d688779](https://github.com/smerth/template-gatsby-theme/commit/d6887793dc8250e20ed63ad22987d6fcfe2c60d1))
+
+
+
+
+
 # [0.4.0-beta.4](https://github.com/smerth/template-gatsby-theme/compare/v0.4.0-beta.3...v0.4.0-beta.4) (2022-02-20)
 
 **Note:** Version bump only for package demo
