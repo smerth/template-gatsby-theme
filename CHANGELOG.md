@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0-beta.3](https://github.com/smerth/gatsby-theme-template/compare/v0.4.0-beta.2...v0.4.0-beta.3) (2022-02-20)
+
+
+### Features
+
+* **template-gatsby-theme:** add publishConfig key to package.json ([ccc4ee6](https://github.com/smerth/gatsby-theme-template/commit/ccc4ee6957fc9962ae551511fecfec667bf4cf22))
+
+
+
+
+
 # [0.4.0-beta.2](https://github.com/smerth/gatsby-theme-template/compare/v0.4.0-beta.1...v0.4.0-beta.2) (2022-02-20)
 
 
