@@ -26,9 +26,7 @@
     "test": "echo package > gatsby-theme-demo: TESTS PASSED"
   },
   "peerDependencies": {
-    "gatsby": ">=2.23.20",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "gatsby": "^3.0.0"
   },
   "keywords": [],
   "gitHead": "481e2cdacf8d123ef8bb1c987d1778986be98045"
