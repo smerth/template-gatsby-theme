@@ -23,11 +23,11 @@ jobs:
         with:
           node-version: "14"
 
-      - name: Edit .npmrc
-        run: |
-          echo "registry=https://registry.npmjs.org" > .npmrc
-          echo "@smerth=https://npm.pkg.github.com/smerth" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
+      # - name: Edit .npmrc
+      #   run: |
+      #     echo "registry=https://registry.npmjs.org" > .npmrc
+      #     echo "@smerth=https://npm.pkg.github.com/smerth" >> .npmrc
+      #     echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
 
       # - name: Release & Publish
       #   uses: cycjimmy/semantic-release-action@v2
