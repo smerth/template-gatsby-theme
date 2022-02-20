@@ -2,8 +2,7 @@
   "name": "@smerth/gatsby-theme-demo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smerth/gatsby-theme-template/",
-    "directory": "packages/gatsby-theme-demo"
+    "url": "https://github.com/smerth/gatsby-theme-template/"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
