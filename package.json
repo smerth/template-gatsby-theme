@@ -40,7 +40,7 @@
   "release": {
     "branches": [
       "main",
-      "next"
+      "development"
     ]
   },
   "config": {
