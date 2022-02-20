@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0-beta.14](https://github.com/smerth/gatsby-theme-template/compare/v0.4.0-beta.13...v0.4.0-beta.14) (2022-02-20)
+
+
+### Bug Fixes
+
+* **test:** pub ([d43e6b0](https://github.com/smerth/gatsby-theme-template/commit/d43e6b0d744e253cd6f7bf16149594d2b577f0e0))
+
+
+
+
+
 # [0.4.0-beta.13](https://github.com/smerth/gatsby-theme-template/compare/v0.4.0-beta.12...v0.4.0-beta.13) (2022-02-20)
 
 
