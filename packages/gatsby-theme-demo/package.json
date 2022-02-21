@@ -2,13 +2,15 @@
   "name": "@smerth/gatsby-theme-demo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smerth/gatsby-theme-template",
-    "directory": "packages/gatsby-theme-demo"
+    "url": "https://github.com/smerth/template-gatsby-theme"
   },
-  "version": "0.3.2",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "version": "0.4.0-beta.15",
   "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
-  "homepage": "https://github.com/smerth/gatsby-theme-template#readme",
-  "bugs": "https://github.com/smerth/gatsby-theme-template/issues",
+  "homepage": "https://github.com/smerth/template-gatsby-theme#readme",
+  "bugs": "https://github.com/smerth/template-gatsby-theme/issues",
   "license": "MIT",
   "main": "index.js",
   "module": "index.js",
@@ -23,13 +25,8 @@
     "test": "echo package > gatsby-theme-demo: TESTS PASSED"
   },
   "peerDependencies": {
-    "gatsby": ">=2.23.20",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "gatsby": "^3.0.0"
   },
   "keywords": [],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "gitHead": "481e2cdacf8d123ef8bb1c987d1778986be98045"
 }

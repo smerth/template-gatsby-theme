@@ -5,10 +5,10 @@
   "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smerth/gatsby-theme-template"
+    "url": "https://github.com/smerth/template-gatsby-theme"
   },
-  "homepage": "https://github.com/smerth/gatsby-theme-template#readme",
-  "bugs": "https://github.com/smerth/gatsby-theme-template/issues",
+  "homepage": "https://github.com/smerth/template-gatsby-theme#readme",
+  "bugs": "https://github.com/smerth/template-gatsby-theme/issues",
   "license": "MIT",
   "scripts": {
     "setup": "npm install && yarn build && yarn serve",
@@ -40,7 +40,7 @@
   "release": {
     "branches": [
       "main",
-      "next"
+      "development"
     ]
   },
   "config": {
