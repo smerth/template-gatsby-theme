@@ -1,5 +1,4 @@
 {
-  "version": "0.5.0",
   "name": "template-gatsby-theme",
   "description": "Starter template for developing and publishing gatsby themes. The project is structured as a monorepo with a folder for GatsbyJS themes and a folder for a GatsbyJS Demo site to test the themes you develop. Comes with semantic-release, lerna and github actions to help streamline workflow.",
   "keywords": [
