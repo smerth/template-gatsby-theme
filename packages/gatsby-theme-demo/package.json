@@ -9,7 +9,9 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
+
   "version": "0.4.0-beta.16",
+
   "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
   "homepage": "https://github.com/smerth/template-gatsby-theme#readme",
   "bugs": "https://github.com/smerth/template-gatsby-theme/issues",
