@@ -19,7 +19,6 @@
   "license": "MIT",
   "scripts": {
     "readme": "npx readme-md-generator",
-    "install": "npm install",
     "start": "npm install && yarn build && yarn serve",
     "develop": "yarn workspace demo start",
     "build": "yarn workspace demo build",
