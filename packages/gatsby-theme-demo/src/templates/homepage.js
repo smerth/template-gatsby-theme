@@ -11,6 +11,10 @@ function Homepage() {
         </span>
         .
       </p>
+      <p>
+        Change #;
+        <span style={{ color: "red", fontWeight: "bold" }}>1</span>.
+      </p>
     </div>
   );
 }
