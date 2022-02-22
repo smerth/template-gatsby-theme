@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1-beta.0](https://github.com/smerth/template-gatsby-theme/compare/v0.4.0-beta.16...v0.5.1-beta.0) (2022-02-22)
+
+
+### Bug Fixes
+
+* **demo:** set theme version to * ([7598c60](https://github.com/smerth/template-gatsby-theme/commit/7598c60612d571ad37261b8e441526c130631feb))
+* **root:** bump version to 0.5.0 ([bf5f359](https://github.com/smerth/template-gatsby-theme/commit/bf5f359657a29ef6e4a396100e387f254f4a6bf6))
+* **root:** edit readme file ([055f374](https://github.com/smerth/template-gatsby-theme/commit/055f374f0509f37107d3ea40a4b5a42398cfb2c2))
+
+
+
+# [0.4.0](https://github.com/smerth/template-gatsby-theme/compare/v0.4.0-beta.15...v0.4.0) (2022-02-21)
+
+
+
+
+
 
 # [0.4.0-beta.16](https://github.com/smerth/template-gatsby-theme/compare/v0.4.0-beta.15...v0.4.0-beta.16) (2022-02-22)
 
