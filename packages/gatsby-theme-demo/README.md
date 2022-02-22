@@ -1,3 +1,3 @@
 # Gatsby Theme Demo
 
-This a test to make sure the `@smerth/gatsby-theme-template` is publishing themes using commitizen and lerna.
+This theme is just demo to test the `@smerth/gatsby-theme-template` is publishing packages correctly using github actions, semantic-release and lerna.

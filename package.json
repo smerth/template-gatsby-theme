@@ -1,6 +1,13 @@
 {
-  "name": "root",
-  "description": "Starter template for developing and publishing gatsby themes.",
+  "name": "template-gatsby-theme",
+  "description": "Starter template for developing and publishing gatsby themes. The project is structured as a monorepo with a folder for GatsbyJS themes and a folder for a GatsbyJS Demo site to test the themes you develop. Comes with semantic-release, lerna and github actions to help streamline workflow.",
+  "keywords": [
+    "template",
+    "gatsby",
+    "gatsby-theme",
+    "publish",
+    "github-actions"
+  ],
   "private": true,
   "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
   "repository": {
@@ -11,6 +18,7 @@
   "bugs": "https://github.com/smerth/template-gatsby-theme/issues",
   "license": "MIT",
   "scripts": {
+    "readme": "npx readme-md-generator",
     "setup": "npm install && yarn build && yarn serve",
     "develop": "yarn workspace demo start",
     "build": "yarn workspace demo build",
@@ -18,7 +26,6 @@
     "format": "yarn workspace demo format",
     "clean": "yarn workspace demo clean",
     "scrub": "yarn clean && find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
-    "readme": "readme",
     "pub": "lerna publish",
     "commit": "git add . && npx git-cz"
   },
@@ -34,7 +41,6 @@
     "ghooks": "^2.0.0",
     "lerna": "^4.0.0",
     "prettier": "^2.0.0",
-    "readme-md-generator": "^1.0.0",
     "semantic-release": "^19.0.0"
   },
   "release": {

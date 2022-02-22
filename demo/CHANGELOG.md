@@ -3,7 +3,9 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [0.4.0](https://github.com/smerth/template-gatsby-theme/compare/v0.4.0-beta.15...v0.4.0) (2022-02-21)
+
+# [0.4.0-beta.16](https://github.com/smerth/template-gatsby-theme/compare/v0.4.0-beta.15...v0.4.0-beta.16) (2022-02-22)
+
 
 **Note:** Version bump only for package demo
 
