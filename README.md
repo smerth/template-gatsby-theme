@@ -15,8 +15,6 @@
 
 ### 🏠 [Homepage](https://github.com/smerth/template-gatsby-theme#readme)
 
-
-
 ## Supported Workflow
 
 This template should make it easier to publish and support GatsbyJS theme development following this workflow:
@@ -34,10 +32,6 @@ This template should make it easier to publish and support GatsbyJS theme develo
 - Theme Users can install the beta-release Package and test it out.  When all the stake-holders are satisfied the beta-release is ready to move into production the Maintainer can issue a Pull Request from `development` to `main` .
 - The GitHub Action defined in `publish.yaml` runs on `github.event.pull_request.merged` and a package is published.  This package will be versioned as a `normal` release since the Pull Request was issued against the main branch.
 
-
-
-
-
 ## Setup
 
 ### Create a New Project From This Template
@@ -52,13 +46,12 @@ yarn install
 
 To install, build and serve from a single command use `yarn start`.
 
-
 ### Edit GitHub Actions
 
 You will need to edit the workflow files `checks.yaml` and `publish.yaml` to:
 
 - replace "@smerth" with your organization name
-- Add your own token replacing "NPM_TOKEN" 
+- Add your own token replacing "NPM_TOKEN"
 
 ```
       - name: "Setup npm" # Add our registry to npm config
@@ -67,7 +60,7 @@ You will need to edit the workflow files `checks.yaml` and `publish.yaml` to:
           npm set "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}"
 ```
 
-If you are only using public packages from GitHub to develop your theme, you can use the `GITHUB_TOKEN ` which is available on secrets for every repository.  However, if you are using your own private packages in your theme you need to create a personal access token and add it to the secrets for you project.
+If you are only using public packages from GitHub to develop your theme, you can use the `GITHUB_TOKEN` which is available on secrets for every repository.  However, if you are using your own private packages in your theme you need to create a personal access token and add it to the secrets for you project.
 
 ### Replace Project Information
 
@@ -91,13 +84,13 @@ Edit `LISENCE` and `CONTRIBUTING.md`  to suit your needs.
 
 ### Re-set versions
 
-Set version to your preferred starting point.
+Check that the version for all themes used in the demo gatsby site is set to "*".  Otherwise the GitHub Actions will have difficulty finding and installing theme the first time the check action runs.  Don't worry this will be updated and managed for you with each merge.
+
+Set version of your theme packages and the demo site to your preferred starting point. Maybe `0.0.0`, or `1.0.0`...
 
 ### Empty CHANGELOG.md
 
 Delete the contents of CHANGELOG.md (at the root and in the theme).  These will be updated automatically by semantic-release when new code is merged.
-
-
 
 ## Develop
 
@@ -118,14 +111,12 @@ to
 
 etc...
 
-
-
 ## Author
 
-👤 **Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)**
+👤 **Stephen Merth <stephen.merth@gmail.com> (<https://smerth.github.io/>)**
 
-* Website: http://smerth.github.io
-* Github: [@smerth](https://github.com/smerth)
+- Website: <http://smerth.github.io>
+- Github: [@smerth](https://github.com/smerth)
 
 ## Show your support
 
@@ -133,7 +124,7 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2022 [Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)](https://github.com/smerth).<br />
+Copyright © 2022 [Stephen Merth <stephen.merth@gmail.com> (<https://smerth.github.io/>)](https://github.com/smerth).<br />
 This project is [MIT](https://github.com/smerth/template-gatsby-theme/blob/master/LICENSE) licensed.
 
 ***
