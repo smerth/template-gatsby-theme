@@ -84,7 +84,7 @@ Edit `LISENCE` and `CONTRIBUTING.md`  to suit your needs.
 
 ### Re-set versions
 
-Check that the version for all themes used in the demo gatsby site is set to "*".  Otherwise the GitHub Actions will have difficulty finding and installing theme the first time the check action runs.  Don't worry this will be updated and managed for you with each merge.
+Check that the version for all themes used in the demo gatsby site is set to `"*"`.  Otherwise the GitHub Actions will have difficulty finding and installing theme the first time the check action runs.  Don't worry this will be updated and managed for you with each merge.
 
 Set version of your theme packages and the demo site to your preferred starting point. Maybe `0.0.0`, or `1.0.0`...
 
