@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/smerth/template-gatsby-theme/compare/v0.5.1...v0.6.0) (2022-02-22)
+
+
+### Bug Fixes
+
+* **root:** remove "install": "npm install" script from package.json ([2f50c71](https://github.com/smerth/template-gatsby-theme/commit/2f50c714582436634ac20a0a1309cd3446002b38))
+* **root:** remove version key from root package.json ([71c68d9](https://github.com/smerth/template-gatsby-theme/commit/71c68d9cdb4e6db2a747e93916c4f472af254a42))
+
+
+### Features
+
+* **gatsby-theme-demo:** mock code change ([3a13fd2](https://github.com/smerth/template-gatsby-theme/commit/3a13fd25e37ecf6cb28249b160870b4bda9f8e4c))
+
+
+
+
+
 ## [0.5.1](https://github.com/smerth/template-gatsby-theme/compare/v0.5.1-beta.0...v0.5.1) (2022-02-22)
 
 **Note:** Version bump only for package template-gatsby-theme

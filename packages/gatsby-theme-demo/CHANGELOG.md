@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/smerth/template-gatsby-theme/compare/v0.5.1...v0.6.0) (2022-02-22)
+
+
+### Features
+
+* **gatsby-theme-demo:** mock code change ([3a13fd2](https://github.com/smerth/template-gatsby-theme/commit/3a13fd25e37ecf6cb28249b160870b4bda9f8e4c))
+
+
+
+
+
 ## [0.5.1](https://github.com/smerth/template-gatsby-theme/compare/v0.5.1-beta.0...v0.5.1) (2022-02-22)
 
 **Note:** Version bump only for package @smerth/gatsby-theme-demo
