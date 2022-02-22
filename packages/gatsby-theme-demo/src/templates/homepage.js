@@ -11,7 +11,6 @@ function Homepage() {
         </span>
         .
       </p>
-      <p>v 22</p>
     </div>
   );
 }

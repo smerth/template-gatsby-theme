@@ -1,5 +1,7 @@
 {
   "name": "@smerth/gatsby-theme-demo",
+  "description": "This theme is just demo to test the `@smerth/template-gatsby-theme` is publishing packages correctly using github actions, semantic-release and lerna.",
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/smerth/template-gatsby-theme"
@@ -27,6 +29,5 @@
   "peerDependencies": {
     "gatsby": "^3.0.0"
   },
-  "keywords": [],
   "gitHead": "481e2cdacf8d123ef8bb1c987d1778986be98045"
 }
