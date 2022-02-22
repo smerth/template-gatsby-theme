@@ -9,8 +9,7 @@ exports.createPages = ({ actions }) => {
   // Create a single page.
 
   createPage({
-    // Path for this page — required
-    path: `/`,
+    path: `/`, // Path for this page — required
     component: homepageTemplate,
     context: {
       // Add optional context data to be inserted
