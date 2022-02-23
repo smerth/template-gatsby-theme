@@ -17,6 +17,10 @@
   "homepage": "https://github.com/smerth/template-gatsby-theme#readme",
   "bugs": "https://github.com/smerth/template-gatsby-theme/issues",
   "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "demo"
+  ],
   "scripts": {
     "readme": "npx readme-md-generator",
     "start": "npm install && yarn build && yarn serve",
@@ -29,10 +33,6 @@
     "pub": "lerna publish",
     "commit": "git add . && npx git-cz"
   },
-  "workspaces": [
-    "packages/*",
-    "demo"
-  ],
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.0",
     "@semantic-release/git": "^10.0.0",
@@ -42,12 +42,6 @@
     "lerna": "^4.0.0",
     "prettier": "^2.0.0",
     "semantic-release": "^19.0.0"
-  },
-  "release": {
-    "branches": [
-      "main",
-      "development"
-    ]
   },
   "config": {
     "ghooks": {},
