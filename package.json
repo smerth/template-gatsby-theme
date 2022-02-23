@@ -44,8 +44,6 @@
     "semantic-release": "^19.0.0"
   },
   "config": {
-    "ghooks": {
-      "prepare-commit-msg": "exec < /dev/tty && node_modules/.bin/cz --hook || true"
-    }
+    "ghooks": {}
   }
 }
