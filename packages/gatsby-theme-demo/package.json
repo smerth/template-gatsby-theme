@@ -3,17 +3,17 @@
   "name": "@smerth/gatsby-theme-demo",
   "description": "This theme is just demo to test the `@smerth/template-gatsby-theme` is publishing packages correctly using github actions, semantic-release and lerna.",
   "keywords": [],
+  "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
   "repository": {
     "type": "git",
     "url": "https://github.com/smerth/template-gatsby-theme"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
   "homepage": "https://github.com/smerth/template-gatsby-theme#readme",
   "bugs": "https://github.com/smerth/template-gatsby-theme/issues",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "main": "index.js",
   "module": "index.js",
   "files": [
@@ -24,7 +24,7 @@
     "index.js"
   ],
   "scripts": {
-    "test": "echo package > gatsby-theme-demo: TESTS PASSED"
+    "test": "echo package > TESTS PASSED"
   },
   "peerDependencies": {
     "gatsby": "^3.0.0"
