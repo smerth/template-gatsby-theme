@@ -1,4 +1,6 @@
 {
+  "private": true,
+  "license": "MIT",
   "name": "template-gatsby-theme",
   "description": "Starter template for developing and publishing gatsby themes. The project is structured as a monorepo with a folder for GatsbyJS themes and a folder for a GatsbyJS Demo site to test the themes you develop. Comes with semantic-release, lerna and github actions to help streamline workflow.",
   "keywords": [
@@ -8,7 +10,6 @@
     "publish",
     "github-actions"
   ],
-  "private": true,
   "author": "Stephen Merth <stephen.merth@gmail.com> (https://smerth.github.io/)",
   "repository": {
     "type": "git",
@@ -16,7 +17,6 @@
   },
   "homepage": "https://github.com/smerth/template-gatsby-theme#readme",
   "bugs": "https://github.com/smerth/template-gatsby-theme/issues",
-  "license": "MIT",
   "workspaces": [
     "packages/*",
     "demo"
