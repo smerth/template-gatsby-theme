@@ -25,7 +25,7 @@ jobs:
 
       - name: "Setup npm" # Add our registry to npm config
         run: | # Custom action
-          npm set @smerth:registry=https://npm.pkg.github.com/smerth
+          npm set @ORGANIZATION:registry=https://npm.pkg.github.com/ORGANIZATION
           npm set "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}"
 
       - name: "Version and publish" # publish package
@@ -47,7 +47,7 @@ jobs:
       # - name: Edit .npmrc
       #   run: |
       #     echo "registry=https://registry.npmjs.org" > .npmrc
-      #     echo "@smerth=https://npm.pkg.github.com/smerth" >> .npmrc
+      #     echo "@ORGANIZATION=https://npm.pkg.github.com/ORGANIZATION" >> .npmrc
       #     echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
 
       # - name: Release & Publish
