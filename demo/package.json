@@ -1,5 +1,5 @@
 {
-  "version": "0.6.0",
+  "version": "0.0.1",
   "private": true,
   "name": "demo",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "@smerth/gatsby-theme-demo": "^0.6.0",
+    "@smerth/gatsby-theme-demo": "*",
     "gatsby": "^3.0.0"
   },
   "devDependencies": {
