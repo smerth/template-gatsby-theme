@@ -4,8 +4,11 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - development
       - main
+      - next
+      - next-major
+      - beta
+      - alpha
 
 jobs:
   publish:
@@ -21,7 +24,7 @@ jobs:
       - name: "Use NodeJS 14"
         uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: "lts/*"
 
       - name: "Setup npm" # Add our registry to npm config
         run: | # Custom action
@@ -36,24 +39,16 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
 
-          if [ ${{ github.base_ref }} = development ]; then
+          if [ ${{ github.base_ref }} = next ]; then
+            npx lerna version --conventional-commits --conventional-graduate --yes
+            npx lerna publish from-git --dist-tag next --yes
+          elif [ ${{ github.base_ref }} = beta ]; then
             npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes
+            npx lerna publish from-git --pre-dist-tag beta  --yes
+          elif [ ${{ github.base_ref }} = alpha ]; then
+            npx lerna version --conventional-commits --conventional-prerelease --preid alpha --yes
+            npx lerna publish from-git --pre-dist-tag alpha  --yes
           else
             npx lerna version --conventional-commits --conventional-graduate --yes
+            npx lerna publish from-git --yes
           fi
-
-          npx lerna publish from-git --yes
-
-      # - name: Edit .npmrc
-      #   run: |
-      #     echo "registry=https://registry.npmjs.org" > .npmrc
-      #     echo "@ORGANIZATION=https://npm.pkg.github.com/ORGANIZATION" >> .npmrc
-      #     echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
-
-      # - name: Release & Publish
-      #   uses: cycjimmy/semantic-release-action@v2
-      #   id: semantic
-
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
