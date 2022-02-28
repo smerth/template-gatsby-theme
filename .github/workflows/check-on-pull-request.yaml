@@ -9,7 +9,7 @@ jobs: # A workflow can have multiple jobs
     runs-on: ubuntu-latest # Instance type where job will run
 
     steps:
-      - name: "Checkout" # Download code from the repository
+      - name: "Checkout Repository" # Download code from the repository
         uses: actions/checkout@v2 # Public action
         with:
           fetch-depth: 0 # Checkout all branches and tags
@@ -19,7 +19,7 @@ jobs: # A workflow can have multiple jobs
         with:
           node-version: "lts/*"
 
-      - name: "Setup npm" # Add our registry to npm config
+      - name: "Setup NPM" # Add our registry to npm config
         run: | # Custom action
           npm set @ORGANIZATION:registry=https://npm.pkg.github.com/ORGANIZATION
           npm set "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}"
