@@ -1,4 +1,4 @@
-name: Check on pull request # Workflow name
+name: Test on pull request # Workflow name
 
 on:
   pull_request:
