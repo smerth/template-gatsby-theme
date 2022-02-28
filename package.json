@@ -16,7 +16,10 @@
     "url": "https://github.com/smerth/template-gatsby-theme"
   },
   "homepage": "https://github.com/smerth/template-gatsby-theme#readme",
-  "bugs": "https://github.com/smerth/template-gatsby-theme/issues",
+  "bugs": {
+    "url": "https://github.com/smerth/template-gatsby-theme/issues"
+  },
+  "twitter": "stephen_merth",
   "workspaces": [
     "packages/*",
     "demo"
