@@ -1,4 +1,4 @@
-name: Publish
+name: Publish on pull request merged
 
 on:
   pull_request:
@@ -21,7 +21,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: "Use NodeJS 14"
+      - name: "Use Node LTS"
         uses: actions/setup-node@v2
         with:
           node-version: "lts/*"
