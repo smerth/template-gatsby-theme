@@ -2,7 +2,7 @@
   "private": true,
   "license": "MIT",
   "name": "template-gatsby-theme",
-  "description": "Starter template for developing and publishing gatsby themes. The project is structured as a monorepo with a folder for GatsbyJS themes and a folder for a GatsbyJS Demo site to test the themes you develop. Comes with semantic-release, lerna and github actions to help streamline workflow.",
+  "description": "A starter template for developing and publishing GatsbyJS themes. The project is structured as a monorepo with a folder for GatsbyJS themes and a folder for a GatsbyJS Demo site to test the themes you develop. Comes with semantic-release, lerna and github actions to help streamline your publishing workflow.",
   "keywords": [
     "template",
     "gatsby",
@@ -27,6 +27,7 @@
   "scripts": {
     "readme": "npx readme-md-generator",
     "setup": "npm install",
+    "first-run": "npm install && git add . && git commit -m 'feat: initial commit' && git push && lerna publish ",
     "start": "npm install && yarn build && yarn serve",
     "develop": "yarn workspace demo start",
     "build": "yarn workspace demo build",
