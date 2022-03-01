@@ -27,7 +27,7 @@
     "readme": "npx readme-md-generator",
     "setup": "npm install",
     "first-commit": "npm install && git add . && git commit -m 'feat: initial commit' && git push && lerna publish --yes",
-    "start": "npm install && yarn build && yarn serve",
+    "start": "yarn build && yarn serve",
     "develop": "yarn workspace demo start",
     "build": "yarn workspace demo build",
     "serve": "yarn workspace demo serve",
