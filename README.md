@@ -32,20 +32,23 @@ On the GitHub page for this repository, click the `use this template` button to 
 
 Clone your new repository to your local dev environment.
 
+### Update repository author
+
+@ package.json - update the author property, do this now before carrying out search and replace text
+
 ### Search and replace text
 
-Open your project in your favorite IDE and <u>search and replace</u> the following items <u>**across the whole code base**</u>:
+Open your project in your favorite IDE and **search and replace** the following items everywhere they occur with the exception of `package-lock` files and this `README.md` file:
 
-| SEARCH       | REPLACE (using these example formats)                        |
-| ------------ | ------------------------------------------------------------ |
-| AUTHOR       | Stephen Merth <stephen.merth@gmail.com> (<https://smerth.github.io/>) |
-| REPOSITORY   | template-GatsbyJS-theme                                      |
-| THEME        | GatsbyJS-theme-demo                                          |
-| ORGANISATION | smerth                                                       |
+| SEARCH                | REPLACE (using these example formats) |
+| --------------------- | ------------------------------------- |
+| smerth                | YOUR_ORGANIZATION_NAME                |
+| template-gatsby-theme | YOUR_REPOSITORY_NAME                  |
+| gatsby-theme-demo     | YOUR_THEME_NAME                       |
 
 ### Review package.json files
 
-Review and edit the package.json files found at the root of the project and the theme and edit any fields as necessary.  For example: description, keywords,...
+Review and edit the package.json files found at the root of the project and the theme and edit any fields as necessary. For example: description, keywords,...
 
 ### Generate readme files
 
@@ -53,9 +56,9 @@ The readme files at the project root and the theme root should be updated. runni
 
 ### Setup authentication
 
-This template supports developing a GatsbyJS theme which may use a private GitHub package.  In order to install private GitHub packages and publish a private package to GitHub you will need to create a Personal Access Token (PAT) and give it permissions to install and write private packages.
+This template supports developing a GatsbyJS theme which may use a private GitHub package. In order to install private GitHub packages and publish a private package to GitHub you will need to create a Personal Access Token (PAT) and give it permissions to install and write private packages.
 
-Add the PAT as a secret to your repository.  Name it  `NPM_TOKEN` .
+Add the PAT as a secret to your repository. Name it `NPM_TOKEN` .
 
 ## Important Notes
 
@@ -69,9 +72,9 @@ TODO:
 
 ### Publishing first package
 
-In future you will publish packages by creating pull requests against the supported branches, according to the workflows outlined in the docs folder.  When a pull request is merged a GitHub action will handle versioning and publish a release.
+In future you will publish packages by creating pull requests against the supported branches, according to the workflows outlined in the docs folder. When a pull request is merged a GitHub action will handle versioning and publish a release.
 
-However a first package must be published manually to start the ball rolling.  There is a script for this.
+However a first package must be published manually to start the ball rolling. There is a script for this.
 
 ```bash
 yarn pub
@@ -81,7 +84,7 @@ yarn pub
 
 ### Use a private package
 
-Before diving into your theme development, try to install a private package from GitHub package repository and use it in your theme, and then publish your theme.  If this doesn't work it best to troubleshoot it now.
+Before diving into your theme development, try to install a private package from GitHub package repository and use it in your theme, and then publish your theme. If this doesn't work it best to troubleshoot it now.
 
 ### Edit your test script
 

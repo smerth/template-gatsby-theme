@@ -19,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/smerth/template-gatsby-theme/issues"
   },
-  "twitter": "stephen_merth",
   "workspaces": [
     "packages/*",
     "demo"
@@ -43,12 +42,8 @@
     "@semantic-release/git": "^10.0.0",
     "commitizen": "^4.0.0",
     "cz-conventional-changelog": "^3.0.0",
-    "ghooks": "^2.0.0",
     "lerna": "^4.0.0",
     "prettier": "^2.0.0",
     "semantic-release": "^19.0.0"
-  },
-  "config": {
-    "ghooks": {}
   }
 }
