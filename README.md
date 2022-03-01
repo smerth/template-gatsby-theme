@@ -58,31 +58,34 @@ This template supports developing a GatsbyJS theme which may use a private GitHu
 
 Add the PAT as a secret to your repository. Name the secret: `NPM_TOKEN` .
 
+### Last setup steps
+
+In future you will publish packages by creating pull requests against the supported branches, according to the workflows outlined in the docs folder. When a pull request is merged a GitHub action will handle versioning and publish a release. However **a first package must be published manually** to start the ball rolling. 
+
+To accomplish this you will need to: install dependancies, add, commit, and push the changes, and publish a package through lerna.  Luckily there is a script for that. 
+
+```bash
+yarn first-commit
+```
+
+
 ## Important Considerations
 
 ### NPM versioning
 
-TODO:
+TODO: Update This Section...
 
 ### Installing dependancies
 
-TODO:
+TODO: Update This Section...
 
-### Publishing first package
 
-In future you will publish packages by creating pull requests against the supported branches, according to the workflows outlined in the docs folder. When a pull request is merged a GitHub action will handle versioning and publish a release.
-
-However a first package must be published manually to start the ball rolling. There is a script for this.
-
-```bash
-yarn pub
-```
 
 ## Next steps
 
 ### Use a private package
 
-Before diving into your theme development, try to install a private package from GitHub package repository and use it in your theme, and then publish your theme. If this doesn't work it best to troubleshoot it now.
+TODO: Update This Section...
 
 ### Edit your test script
 
