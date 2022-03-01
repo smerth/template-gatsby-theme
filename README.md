@@ -22,19 +22,17 @@ explain these:
 - use private packages
 - publish private package
 
-## Using this template
+## Use this template
 
-Follow these steps **in order** for a quick and hopefully painless setup:
+Follow these steps **in order** to quickly setup your new project
 
 ### Create a repository from the template
 
-On the GitHub page for this repository, click the `use this template` button to create a new repository from this template.
-
-Clone your new repository to your local dev environment.
+On the GitHub page for this repository, click the `use this template` button to create a new repository from this template. Clone your new repository to your local dev environment.
 
 ### Update repository author
 
-@ package.json - update the author property, do this now before carrying out search and replace text
+@ package.json - update the **author** property, do this before carrying out search and replace text
 
 ### Search and replace text
 
@@ -58,9 +56,9 @@ The readme files at the project root and the theme root should be updated. runni
 
 This template supports developing a GatsbyJS theme which may use a private GitHub package. In order to install private GitHub packages and publish a private package to GitHub you will need to create a Personal Access Token (PAT) and give it permissions to install and write private packages.
 
-Add the PAT as a secret to your repository. Name it `NPM_TOKEN` .
+Add the PAT as a secret to your repository. Name the secret: `NPM_TOKEN` .
 
-## Important Notes
+## Important Considerations
 
 ### NPM versioning
 
