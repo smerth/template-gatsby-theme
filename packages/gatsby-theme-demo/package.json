@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "1.0.0",
   "name": "@smerth/gatsby-theme-demo",
   "description": "This theme is just demo to test whether the package publishing is working correctly using github actions, semantic-release and lerna.",
   "keywords": [
