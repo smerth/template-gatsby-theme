@@ -40,11 +40,11 @@ Clone your new repository to your local dev environment.
 
 Open your project in your favorite IDE and **search and replace** the following items everywhere they occur with the exception of `package-lock` files and this `README.md` file:
 
-| SEARCH                | REPLACE (using these example formats) |
-| --------------------- | ------------------------------------- |
-| smerth                | YOUR_ORGANIZATION_NAME                |
-| template-gatsby-theme | YOUR_REPOSITORY_NAME                  |
-| gatsby-theme-demo     | YOUR_THEME_NAME                       |
+| SEARCH                | REPLACE                |
+| --------------------- | ---------------------- |
+| smerth                | YOUR_ORGANIZATION_NAME |
+| template-gatsby-theme | YOUR_REPOSITORY_NAME   |
+| gatsby-theme-demo     | YOUR_THEME_NAME        |
 
 ### Review package.json files
 
