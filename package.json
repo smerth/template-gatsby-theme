@@ -24,6 +24,7 @@
     "demo"
   ],
   "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
     "readme": "npx readme-md-generator",
     "setup": "npm install",
     "first-commit": "npm install && git add . && git commit -m 'feat: initial commit' && git push && lerna publish --yes",
