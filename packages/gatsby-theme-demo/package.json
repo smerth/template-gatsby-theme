@@ -30,7 +30,7 @@
     "test": "echo package > TESTS PASSED"
   },
   "peerDependencies": {
-    "gatsby": "^3.0.0"
+    "gatsby": "^4.0.0"
   },
   "gitHead": "481e2cdacf8d123ef8bb1c987d1778986be98045"
 }

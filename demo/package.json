@@ -13,10 +13,12 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "@smerth/gatsby-theme-demo": "*",
-    "gatsby": "^3.0.0"
+    "@smerth/gatsby-theme-demo": "file:../packages/gatsby-theme-demo",
+    "gatsby": "^4.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^2.0.0"
   }
 }
