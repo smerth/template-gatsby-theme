@@ -24,18 +24,16 @@
     "demo"
   ],
   "scripts": {
-    "bootstrap": "lerna bootstrap --use-workspaces",
     "readme": "npx readme-md-generator",
     "setup": "npm install",
-    "first-commit": "npm install && git add . && git commit -m 'feat: initial commit' && git push && lerna publish --yes",
     "start": "yarn build && yarn serve",
     "develop": "yarn workspace demo start",
     "build": "yarn workspace demo build",
     "serve": "yarn workspace demo serve",
     "format": "yarn workspace demo format",
-    "clean": "yarn workspace demo clean",
-    "scrub": "yarn clean && find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
-    "pub": "lerna publish",
+    "clean:site": "yarn workspace demo clean",
+    "clean:all": "lerna clean --yes && lerna run clean && rm -rf node_modules",
+    "first-commit": "git add . && git commit -m 'feat: initial commit' && git push && lerna publish --yes",
     "commit": "git add . && npx git-cz"
   },
   "devDependencies": {
