@@ -24,17 +24,22 @@
     "demo"
   ],
   "scripts": {
-    "readme": "npx readme-md-generator",
-    "setup": "npm install",
+    "setup": "yarn",
+    "commit": "git add . && npx git-cz",
+    "first-commit": "yarn && git add . && git commit -m 'feat: initial commit' && git push && lerna publish --yes",
     "start": "yarn build && yarn serve",
     "develop": "yarn workspace demo start",
     "build": "yarn workspace demo build",
     "serve": "yarn workspace demo serve",
     "format": "yarn workspace demo format",
-    "clean:site": "yarn workspace demo clean",
-    "clean:all": "lerna clean --yes && lerna run clean && rm -rf node_modules",
-    "first-commit": "git add . && git commit -m 'feat: initial commit' && git push && lerna publish --yes",
-    "commit": "git add . && npx git-cz"
+    "clean": "yarn workspace demo clean",
+    "scrub": "yarn clean && find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+    "lerna:bootstrap": "lerna bootstrap --use-workspaces",
+    "lerna:publish": "lerna publish",
+    "readme": "npx readme-md-generator"
+  },
+  "dependencies": {
+    "@smerth/gatsby-theme-demo": "*"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.0",
