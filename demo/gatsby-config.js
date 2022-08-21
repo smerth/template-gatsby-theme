@@ -1,9 +1,7 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
+  siteMetadata: {
+    title: `demo`,
+    siteUrl: `https://www.yourdomain.tld`,
+  },
   plugins: ["@smerth/gatsby-theme-demo"],
 }

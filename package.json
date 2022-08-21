@@ -2,7 +2,7 @@
   "private": true,
   "license": "MIT",
   "name": "template-gatsby-theme",
-  "description": "A starter template for developing and publishing GatsbyJS themes. The project is structured as a monorepo with a folder for GatsbyJS themes and a folder for a GatsbyJS Demo site to test the themes you develop. Comes with semantic-release, lerna and github actions to help streamline your publishing workflow.",
+  "description": "A starter template for developing and publishing GatsbyJS themes. The project is structured as a monorepo with a folder for GatsbyJS themes and a folder for a GatsbyJS Demo site to test the themes you develop. Setup with semantic-release, lerna and github actions to help streamline your publishing workflow.",
   "keywords": [
     "template",
     "gatsby",
@@ -21,7 +21,8 @@
   },
   "workspaces": [
     "packages/*",
-    "demo"
+    "demo",
+    "demo-2"
   ],
   "scripts": {
     "setup": "yarn",
@@ -36,7 +37,8 @@
     "scrub": "yarn clean && find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
     "lerna:bootstrap": "lerna bootstrap --use-workspaces",
     "lerna:publish": "lerna publish",
-    "readme": "npx readme-md-generator"
+    "readme": "npx readme-md-generator",
+    "gatsby:new": "gatsby new"
   },
   "dependencies": {
     "@smerth/gatsby-theme-demo": "*"

@@ -1,0 +1,35 @@
+body {
+  padding: 3em;
+}
+
+nav > ul {
+  font-weight: bold;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  text-shadow: none;
+  background-image: none;
+}
+
+code {
+  background: #b2f0f5;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+
+pre,
+pre code {
+  background: #fddbdb;
+  padding: 1em;
+  line-height: 1.5;
+}
+
+pre code {
+  padding: 0;
+}
