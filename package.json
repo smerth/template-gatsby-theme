@@ -27,7 +27,7 @@
   "scripts": {
     "setup": "yarn",
     "commit": "git add . && npx git-cz",
-    "first-commit": "yarn && git add . && git commit -m 'feat: initial commit' && git push && lerna publish --yes",
+    "first-commit": "git add . && git commit -m 'feat: initial commit' && git push && lerna publish --yes",
     "start": "yarn build && yarn serve",
     "develop": "yarn workspace demo start",
     "build": "yarn workspace demo build",
