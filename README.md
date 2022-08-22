@@ -4,7 +4,9 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/smerth/template-GatsbyJS-theme/graphs/commit-activity)
 [![License: MIT](https://img.shields.io/github/license/smerth/template-gatsby-theme)](https://github.com/smerth/template-gatsby-theme/blob/master/LICENSE)
 
-> A starter template for developing and publishing GatsbyJS themes. The project is structured as a monorepo with a folder for GatsbyJS themes and a folder for a GatsbyJS Demo site to test the themes you develop. Comes with semantic-release, lerna and github actions to help streamline your publishing workflow.
+> A starter template for developing and publishing GatsbyJS themes. The project is structured as a monorepo with a folder for GatsbyJS themes and GatsbyJS Demo site to test the themes you develop. This repo uses semantic-release, lerna and github actions to help streamline your publishing workflow.
+
+
 
 ## Features
 
@@ -16,60 +18,194 @@
 - Configured to support using and publishing private packages
 - Supports using `semantic-release` workflows, check the [docs folder](docs)
 
+
+
 ## Use this template
 
-Follow these steps **in order** to quickly setup your new project
+>  Follow these steps **in order** to quickly setup your new project
 
-### Create a repository from the template
+
+
+### 1. Create a repository from the template
 
 On the [GitHub page for this repository](https://github.com/smerth/template-gatsby-theme), click the `use this template` button to create a new repository from this template. Clone your new repository to your local dev environment.
 
-### Update repository author
 
-At `package.json` in the repository root update the **author** property with your own information
 
-### Search and replace text
+### 2. Add Repository Secret to the Repo 
 
-Open your new repository in your favorite IDE and **search and replace** the following items everywhere they occur with the exception of `package-lock` files and this `README.md` file:
+In your GitHub account create a Personal Access Token (PAT) with all permissions for managing repos and packages.
 
-| SEARCH                | REPLACE                |
-| --------------------- | ---------------------- |
-| smerth                | YOUR_ORGANIZATION_NAME |
-| template-gatsby-theme | YOUR_REPOSITORY_NAME   |
-| gatsby-theme-demo     | YOUR_THEME_NAME        |
+In your new repository from this template create a new repository secret for github actions.  Call it NPM_TOKEN and give it the value from your PAT.
 
-### Review package.json files
+The GitHub action that handles pubilishing packages and installing packages will use this PAT value to authenticate and enable publishing and installing private GitHub packages to the GitHub package registry.
 
-The key changes have been made in order to start developing your theme however its a good idea to review and edit the `package.json` files found at the root of the repository and the theme and edit any fields as necessary. For example: 
 
-- description
-- keywords
 
-Remember, if you want your Gatsby theme to be found at the [Gatsby Plugin Library](https://www.gatsbyjs.com/plugins/) you need to fill in [appropriate keywords](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/submit-to-plugin-library/#publishing-a-plugin-to-the-library).
+### 3. Update package.json files
 
-### Generate readme files
+> IMPORTANT!!!
+>
+> YOU MUST UPDATE THE INFORMATION IN THE PACKAGE.JSON FILES PRIOR TO PUBLISHING YOUR FIRST PACKAGE OTHERWISE YOU MIGHT ENCOUNTER PROBLEMS WITH THE PACKAGE BEING PUBLISHED TO THE WRONG REPO!
 
-The readme files at the project root and the theme root should be updated. 
+- @root/package.json edit:
+  - name
+  - all repo urls
+  - author
+  - description
+  - dependancies (change to the name-spaced name of your package)
+- @packages change the name of the package folder to the name of your package
+- @packages/<YOUR-PACKAGE>/package.json
+  - name (the name of your package must be name spaced to publish to GitHub Package Registry)
+  - all repo urls
+  - author
+  - description
+- @demo/packages.json
+  - dependancies change to use your package name.
+- @demo/gatsby-config.js
+  - change plugin to the name of your plugin
 
-If run `yarn readme` it will generate a `README.md` file at the repository root, replacing this `README.md` file.  You can cd into the theme folder and run `npx readme-md-generator` to generate a readme there.
+
+
+
+### 4. Install packages
+
+```bash
+yarn
+```
+
+
+
+### 5. Generate readme files
+
+To generate a README at the project root run `npx readme-md-generator`.
+
+Do this again in the package folder.
 
 Find out more about [readme-md-generator](https://github.com/kefranabg/readme-md-generator).
 
-### Setup authentication
 
-This template supports the use of private GitHub packages. In order to install private GitHub packages and publish a private package to GitHub you will need to create a Personal Access Token and give it permissions to install and write private packages.
 
-Add the  Personal Access Token as a secret to your repository. Name the secret: `NPM_TOKEN` .
 
-### Fist commit, push,  and publish
+### 6. Install packages
 
-In future you will publish packages by creating pull requests against the supported branches, according to the workflows outlined in the docs folder. When a pull request is merged, a GitHub action will handle versioning and publish a release. However **a first package must be published manually** to start the ball rolling. 
+- run `yarn setup` to install components
+
+
+
+### 7. Test demo site
+
+- run `yarn develop` to test the demo site in development mode
+- run `yarn build` to test that the demo site builds properly
+
+
+
+### 8. First commit, push, and publish
+
+In future you will publish packages by creating pull requests against the supported branches, according to the workflows outlined in the docs folder. 
+
+When a pull request is merged, a GitHub action will handle versioning and publish a release. However **a first package must be published manually** to start the ball rolling. 
 
 To accomplish this you will need to: install dependancies, add, commit, and push the changes, and publish a package through lerna.  Luckily there is a script for that. 
 
 ```bash
 yarn first-commit
 ```
+
+
+
+### 9. Publish package @latest version
+
+```bash
+yarn first-commit
+```
+
+The `yarn first-commit` script will add, commit, and push the changes to GitHub, then publish the first package `@latest` version, with the versioning managed by Lerna.
+
+Output will be something like this:
+
+```bash
+lerna success published @smerth/verbose-spork 1.1.0
+lerna notice
+lerna notice 📦  @smerth/verbose-spork@1.1.0
+lerna notice === Tarball Contents ===
+lerna notice 0B    gatsby-browser.js
+lerna notice 0B    gatsby-config.js
+lerna notice 0B    gatsby-ssr.js
+lerna notice 603B  src/templates/Homepage.js
+lerna notice 9B    index.js
+lerna notice 372B  src/templates/Secondpage.js
+lerna notice 986B  package.json
+lerna notice 1.1kB LICENSE.md
+lerna notice 66B   README.md
+lerna notice === Tarball Details ===
+lerna notice name:          @smerth/verbose-spork
+lerna notice version:       1.1.0
+lerna notice filename:      smerth-verbose-spork-1.1.0.tgz
+lerna notice package size:  1.8 kB
+lerna notice unpacked size: 3.1 kB
+```
+
+Check `@package/package.json` and `@demo/package.json`.  Both should display the same version: `1.1.0`
+
+Check GitHub your package should be published @version 1.1.0 and marked as `Latest version`
+
+
+
+### 10. Create a next branch
+
+- run `git checkout -b next`
+- publish `next` branch to GitHub
+
+
+
+### 11.  Publish package @next version
+
+- create a feature off of `next` call it  `next-feature-1`
+- publish the branch
+- **do some coding in the package**
+- commit your changes with `yarn commit` this will take you through a CLI for semantic-versioning to make sure your commits conform to some standards in terms of versioning and comments.  *Make this a breaking change. That will bump the version for `next` package publication and it will be easier to see how this whole flow works.*
+- run `git push` to GitHub
+- create a pull request from this `feature` branch to `next` branch.
+- resolve any differences (there should really be any at this point.)
+- merge the pull request
+
+Merging the pull request from a `feature` branch to the `next` branch triggers the GitHub Workflow named "publish"
+
+Workflows are defined in `.github/workflows` and you can edit them if necessary.
+
+The result should be that the GitHub Workflow "publish" publishes the first `@next` version of the package.
+
+```bash
+lerna notice 📦  @smerth/verbose-spork@2.0.0
+lerna notice === Tarball Contents === 
+lerna notice 6.1kB src/styles/normalize.css   
+lerna notice 123B  src/styles/sitewide.css    
+lerna notice 0B    gatsby-browser.js          
+lerna notice 0B    gatsby-config.js           
+lerna notice 0B    gatsby-ssr.js              
+lerna notice 649B  src/templates/Homepage.js  
+lerna notice 9B    index.js                   
+lerna notice 185B  src/components/Layout.js   
+lerna notice 384B  src/templates/Secondpage.js
+lerna notice 986B  package.json               
+lerna notice 1.1kB LICENSE.md                 
+lerna notice 63B   README.md                  
+lerna notice === Tarball Details === 
+lerna notice name:          @smerth/verbose-spork                   
+lerna notice version:       2.0.0                                   
+lerna notice filename:      smerth-verbose-spork-2.0.0.tgz   
+```
+
+Check on GitHub and you will see the @next version of the package has been published as version 2.0.0 but the @latest version remains version 1.1.0
+
+In your code editor switch to the next branch.  See that the version of the package required by the demo site remains at 1.1.0.  This is because you have not pulled the latest changes from GitHub.  Pull.  Now the next branch is requiring the package @2.0.0 (the `next` version of the package.)
+
+
+
+## Publish the demo site
+
+The demo site can be published to AWS Amplify using the gatsby-monorepo CloudFormation template.
 
 
 
@@ -97,13 +233,15 @@ It follows that if you get into trouble managing versioning in the future you ca
 
 If you plan on using a private package in your theme now is a good time to test it out.  Install a private package, use it in your theme, commit the changes, create a pull request, watch the package publish.  If there are any issues, now is a good time to troubleshoot them.
 
-### Test action and test script
+### Test Workflow
 
-The GitHub `test-on-pull-request.yaml` action runs the test script defined in `@root/package.json` you can implement any script you like here to accomodate your testing strategy.
+The GitHub Workflow `test.yaml` runs the test script defined in `@root/package.json` you can implement any script you like here to accomodate your testing strategy.
 
 If you are not implementing testing, or testing out this template to see if you want to use it, you can turn off this action on GitHub to avoid having to wait for it to run.
 
-This action runs on pull-requests and updates. However, you can merge a pull request even if this action fails.  It is possible to prevent a maintainer from merging the pull-request if the action fails but that requires further work.
+This action runs on pull-requests and updates. However, you can merge a pull request even if this action fails.  
+
+It is possible to prevent a maintainer from merging the pull-request if the action fails but that requires further work.
 
 ### Review the supported workflows
 
